@@ -19,19 +19,19 @@
             justify-content: space-between;
         }
         .center-content {
-            flex: 1;
+            flex-grow: 1;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            padding-bottom: 50px; /* Добавлено пространство для футера */
         }
         .instagram-post {
             background-color: white;
             width: 80%;
             max-width: 300px;
-            height: auto;
-            padding: 20px;
-            position: relative;
+            height: 300px; /* Фиксированная высота для сохранения пропорций */
+            padding: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -41,7 +41,6 @@
             color: #333;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border: 1px solid white;
             margin-bottom: 15px;
         }
         .btn-custom {
@@ -69,8 +68,10 @@
         }
         @media (max-width: 576px) {
             .instagram-post {
-                width: calc(100% - 40px); /* Увеличиваем ширину на мобильных устройствах */
-                min-height: 300px; /* Устанавливаем минимальную высоту */
+                width: calc(100% - 40px); /* Увеличенная ширина на мобильных */
+                height: calc(100vw - 40px); /* Высота, соответствующая ширине */
+                max-width: none;
+                max-height: none;
             }
         }
     </style>
