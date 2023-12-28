@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Случайный текст</title>
+    <title>You Are Being Curated</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body, html {
             height: 100%;
             margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
         }
         .full-height {
             height: 100%;
@@ -18,17 +20,47 @@
             align-items: center;
             flex-direction: column;
         }
+        .instagram-post {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+        #shareBtn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        header, footer {
+            text-align: center;
+            margin-top: 10px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h2>You Are Being Curated</h2>
+    </header>
     <div class="container full-height">
         <div class="row full-height justify-content-center align-items-center">
             <div class="col-12 col-md-8 col-lg-6 center-content">
-                <div id="randomText" class="alert alert-primary text-center"></div>
-                <button id="shareBtn" class="btn btn-secondary mt-3">Download</button>
+                <div id="randomText" class="instagram-post"></div>
+                <button id="shareBtn" class="btn btn-secondary mt-3">Curate Me!</button>
             </div>
         </div>
     </div>
+    <footer>
+        <p>Created for the "Manufacturing Consent in the Art World Within the Scope of Curating" doctoral thesis by Halil YILDIRIR</p>
+    </footer>
 
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
     <script src="script.js"></script>
