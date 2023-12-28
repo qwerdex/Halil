@@ -27,9 +27,9 @@
         }
         .instagram-post {
             background-color: white;
-            width: calc(100% - 40px);
+            width: 80%;
             max-width: 300px;
-            height: 300px;
+            height: auto;
             padding: 20px;
             position: relative;
             display: flex;
@@ -69,7 +69,8 @@
         }
         @media (max-width: 576px) {
             .instagram-post {
-                max-width: none;
+                width: calc(100% - 40px); /* Увеличиваем ширину на мобильных устройствах */
+                min-height: 300px; /* Устанавливаем минимальную высоту */
             }
         }
     </style>
