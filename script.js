@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     var texts = [
-        // Добавьте здесь свои цитаты
+        "Art is never finished, only abandoned", 
+        "Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.",
+        "Art does not reproduce the visible; rather, it makes visible",
+        "The true work of art is but a shadow of the divine perfection",
+        "Every artist was first an amateur",
+        "Art is the lie that enables us to realize the truth"
     ];
 
     function updateText() {
