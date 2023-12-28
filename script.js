@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     var texts = [
-        "Текст 1", "Текст 2", "Текст 3", "Текст 4", "Текст 5",
-        "Текст 6", "Текст 7", "Текст 8", "Текст 9", "Текст 10"
+        "Art is never finished, only abandoned", 
+        "Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.",
+        "Art does not reproduce the visible; rather, it makes visible",
+        // Add more quotes as desired
     ];
 
     var randomIndex = Math.floor(Math.random() * texts.length);
@@ -13,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         html2canvas(textContainer).then(canvas => {
             var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
             var link = document.createElement('a');
-            link.download = 'shared-text.png';
+            link.download = 'curated-text.png';
             link.href = image;
             link.click();
         });
