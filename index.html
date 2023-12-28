@@ -30,6 +30,7 @@
             width: 80%;
             max-width: 300px;
             height: 300px;
+            padding: 20px;
             position: relative;
             display: flex;
             justify-content: center;
@@ -40,18 +41,17 @@
             color: #333;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 1px solid white;
             margin-bottom: 15px;
         }
         .btn-custom {
-            position: absolute;
-            bottom: 10px;
             background-color: black;
             color: white;
             border: none;
-            padding: 5px 10px;
+            padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 12px;
+            font-size: 14px;
         }
         header, footer {
             text-align: center;
@@ -66,10 +66,9 @@
     </header>
     <div class="container full-height">
         <div class="center-content">
-            <div id="randomText" class="instagram-post">
-                <button id="downloadBtn" class="btn-custom">Download</button>
-            </div>
+            <div id="randomText" class="instagram-post"></div>
             <button id="curateBtn" class="btn-custom btn-lg mt-3">Curate Me!</button>
+            <button id="downloadBtn" class="btn-custom btn-sm mt-2">Download</button>
         </div>
     </div>
     <footer>
